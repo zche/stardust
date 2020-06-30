@@ -1,4 +1,4 @@
-module github.com/zche/stardust
+module github.com/zche/stardust/v2
 
 go 1.12
 
