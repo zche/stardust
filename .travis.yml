@@ -1,0 +1,28 @@
+language: go
+go:
+  - 1.8.x
+
+# prevent double test runs for PRs
+branches:
+  only:
+    - "master"
+
+os:
+  - linux
+
+matrix:
+  fast_finish: true
+
+install: true
+# install:
+  # - go get github.com/magefile/mage
+  # - mage vendor
+script:
+  - go run $HOME/gopath/src/github.com/cnych/stardust/config/example/main.go
+  # - mage hugoRace
+  # - mage -v check
+  # - ./hugo -s docs/
+  # - ./hugo --renderToMemory -s docs/
+# before_install:
+  # gem install must be run with sudo on OSX
+  # - sudo gem install asciidoctor | gem install asciidoctor
