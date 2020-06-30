@@ -57,5 +57,5 @@ func CheckPhone(s string) bool {
 }
 
 func Hello(name string) string {
-	return fmt.Sprintf("hi, %s", name)
+	return fmt.Sprintf("hi, %s!!!", name)
 }
