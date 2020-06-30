@@ -63,7 +63,7 @@ func Hello(name, lang string) (string, error) {
 	case "zh":
 		return fmt.Sprintf("你好, %s", name), nil
 	default:
-		return "", fmt.Errorf(format:"unknow language")
+		return "", fmt.Errorf("unknow language")
 
 	}
 
