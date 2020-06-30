@@ -1,10 +1,12 @@
 package stringsx
 
 import (
-	"github.com/cnych/stardust/netx/httpx"
+	"fmt"
 	"path"
 	"regexp"
 	"strings"
+
+	"github.com/cnych/stardust/netx/httpx"
 )
 
 func GetSuffix(s string) string {
@@ -52,4 +54,8 @@ func CheckPhone(s string) bool {
 		return false
 	}
 	return true
+}
+
+func Hello(name string) string {
+	return fmt.Sprintf("hi, %s", name)
 }
